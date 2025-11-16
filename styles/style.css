@@ -47,7 +47,7 @@
 }
 
 .card-image-2 {
-  filter: grayscale(0.8);
+  filter: grayscale(80%);
 }
 
 .card-image-3 {
