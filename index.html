@@ -218,20 +218,20 @@
           </button>
         </div>
       </section>
-      <button class="box-button button-save" type="button" aria-controls="dialog" popovertarget="dialog">
+      <button class="box-button button-save" type="button" aria-controls="dialog" onclick="window['dialog'].showModal();">
         <svg class="button-save__icon" width="21" heigth="21" fill="currentColor">
           <use href="svg/floppy.svg#floopy"/>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
-      <div class="dialog" id="dialog" popover="manual">
+      <div class="dialog" id="dialog" popover>
         <div class="dialog__image-title">
           <svg class="dialog__image" width="39" height="39" fill="currentColor">
             <use class="zoom-image" href="svg/floppy.svg#floopy"/>
           </svg>
           <span class="screen__text">Вставьте дискету, чтобы продолжить</span>
         </div>
-        <button class="button__dialog box-button" type="button" aria-controls="dialog" popovertarget="dialog">
+        <button class="button__dialog box-button" type="button" aria-controls="dialog" onclick="window['dialog'].close();">
           <span class="button__text">OK</span>
         </button>
       </div>
