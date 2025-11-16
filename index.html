@@ -218,7 +218,7 @@
           </button>
         </div>
       </section>
-      <button class="box-button button-save" onclick="window['dialog'].showModal();">
+      <button class="box-button button-save" type="button" onclick="window['dialog'].showModal();">
         <svg class="button-save__icon" width="21" heigth="21" fill="currentColor">
           <use href="svg/floppy.svg#floopy"/>
         </svg>
@@ -231,12 +231,9 @@
           </svg>
           <span class="screen__text">Вставьте дискету, чтобы продолжить</span>
         </div>
-        <button class="button__dialog box-button" onclick="window['dialog'].close();">
-          <span class="button__text">OK</span>
-        </button>
+        <button class="button__dialog box-button" type="button" onclick="window['dialog'].close();"><span class="button__text">OK</span></button>
       </dialog>
     </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
-
