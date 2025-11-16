@@ -51,7 +51,7 @@
 }
 
 .card-image-3 {
-  filter: saturate(400%);
+   filter: saturate(500%);
 }
 
 .card-image-4 {
@@ -59,23 +59,20 @@
 }
 
 .card-image-5 {
-  filter: invert(79%);
+  filter: invert(0.8);
 }
 
 .card-image-6 {
-  filter: sepia(90%);
+  filter: sepia(0.9);
 }
 
 .card-image-7 {
-  filter: blur(20px);
+  filter: blur(1.2rem);
 }
 
 .card-image-8 {
   filter:
-    hue-rotate(90deg)
-    saturate(160%)
-    contrast(40%)
-    blur(2px);
+    blur(0.15rem) hue-rotate(95deg) saturate(200%) contrast(40%);
 }
 
 .card__picture-title {
@@ -180,6 +177,10 @@
   fill: white;
   background-color: white;
   border: var(--border);
+}
+
+.box-button:focus {
+  box-shadow: 2px 2px 0 black;
 }
 
 .box-button::before {
