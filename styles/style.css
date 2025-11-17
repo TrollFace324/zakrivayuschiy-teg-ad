@@ -120,6 +120,7 @@
 
 .header__title {
   font-size: clamp(49px, calc(49px + 0.024 * (100vw - 375px)), 65px);
+  margin-bottom: 20px;
 }
 
 .header__subtitle {
