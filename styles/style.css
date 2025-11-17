@@ -13,10 +13,19 @@
 .page {
   margin: 0 auto;
   width: clamp(375px, calc(375px + 0.494 * (100vw - 375px)), 696px);
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
   background-image:
     repeating-linear-gradient(0deg, transparent, #d3d3d3 2px),
     repeating-linear-gradient(90deg, transparent, #d3d3d3 2px),
     linear-gradient(#e7e7e7, #1a1a1a);
+  z-index: -1;
+  left: 0;
+  top: 0;
 }
 
 .card {
